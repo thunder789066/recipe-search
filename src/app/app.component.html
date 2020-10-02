@@ -26,14 +26,14 @@
       <td>{{hit.recipe.yield}}</td>
       <td>servings</td>
       <td>{{hit.recipe.label}}</td>
-      <td>{{hit.recipe.calories<!-- | number: 1-->}} kcal</td>
+      <td>{{hit.recipe.calories | number: '1.1-1'}} kcal</td>
       <td>
         Proteins:&nbsp;&nbsp;&nbsp;
-        {{hit.recipe.totalNutrients.PROCNT.quantity}} {{hit.recipe.totalNutrients.PROCNT.unit}}<br>
+        {{hit.recipe.totalNutrients.PROCNT.quantity | number: '1.1-1'}} {{hit.recipe.totalNutrients.PROCNT.unit}}<br>
         Fat:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        {{hit.recipe.totalNutrients.FAT.quantity}} {{hit.recipe.totalNutrients.FAT.unit}}<br>
+        {{hit.recipe.totalNutrients.FAT.quantity | number: '1.1-1'}} {{hit.recipe.totalNutrients.FAT.unit}}<br>
         Carbs:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        {{hit.recipe.totalNutrients.CHOCDF.quantity}} {{hit.recipe.totalNutrients.CHOCDF.unit}}
+        {{hit.recipe.totalNutrients.CHOCDF.quantity | number: '1.1-1'}} {{hit.recipe.totalNutrients.CHOCDF.unit}}
       </td>
     </tr>
     </tbody>
